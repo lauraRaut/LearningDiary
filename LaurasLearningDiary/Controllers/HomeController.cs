@@ -27,7 +27,7 @@ namespace LaurasLearningDiary.Controllers
         {
             return View();
         }
-        public IActionResult Search()
+        public IActionResult Instructions()
         {
             return View();
         }

@@ -153,4 +153,4 @@ C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\ne
 C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\netcoreapp3.1\Razor\Views\Topics\Details.cshtml.g.cs
 C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\netcoreapp3.1\Razor\Views\Topics\Edit.cshtml.g.cs
 C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\netcoreapp3.1\Razor\Views\Topics\Index.cshtml.g.cs
-C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\netcoreapp3.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Users\laura\source\repos\LaurasLearningDiary\LaurasLearningDiary\obj\Debug\netcoreapp3.1\Razor\Views\Home\Instructions.cshtml.g.cs
