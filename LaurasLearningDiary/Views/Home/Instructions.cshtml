@@ -2,8 +2,9 @@
 <html>
 <body>
 
+
     <h1>Instructions</h1>
-    
+
 
     <p>Please click the button to see instructions.</p>
     <p></p>
@@ -11,13 +12,53 @@
     <button onclick="myFunction()">Instructions</button>
 
     <p id="instructions"></p>
+ 
+    <label id="IdField">
 
+        <input type="text" id="Id" name="IdField" class="testi" placeholder="ID" required />
+    </label>
+
+
+  <!--Ohjeet nappia painamalla-->
     <script>
         function myFunction() {
             alert("Frank Borman - One World:" + "\n" +
                 "The view of the earth from the moon fascinated me - a small disk, 240, 000 mniles away.It was hard to think that that little thing held so many problems, so many frustrations.Raging nationalistic interests, famines, wars, pestilence don't show from that distance. I'm convinced that some wayward stranger in a space - craft, coming from some other part of the heavens, could look at earth and never know that it was inhabited at all.But the samw wayward stranger would certainly know instinctively that if the earth were inhabited, then the destinies of all who lived on it must inevitably be interwoven and joined.We are one hunk of ground, water, air, clouds, floating around in space.From out there it really is 'one world'.");
         }
+
     </script>
 
+   <!--Värivaihdos input-boxeissa-->
+    <script>
+        const box = document.getElementById('Id');
+
+        // 👇️ Change text color on mouseover
+        box.addEventListener('mouseover', function handleMouseOver() {
+            box.style.backgroundColor = 'red';
+        });
+
+        // 👇️ Change text color back on mouseout
+        box.addEventListener('mouseout', function handleMouseOut() {
+            box.style.backgroundColor = 'black';
+        });
+
+        //terkut localista
+        localStorage.setItem("testi", "terkkuja localStoragesta o/");
+    </script>
+
+    <script>
+
+        const input = document.querySelectror("IdField"),
+            h2 = document.querySelector("h2");
+
+        input.addEventListener("keyup", display);
+
+        function display() {
+
+            localStorage.setItem('value', input.value);
+            h2.innerHTML = localStorage.getItem("value")
+        }
+
+    </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 
 }
-
+<script src="site.js"></script>
 
 <h1>Create</h1>
 
@@ -15,18 +15,18 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></label>
-                <input asp-for="Title" class="form-control" />
+                <label asp-for="Title" class="control-label"> </label>
+                <input asp-for="Title" id="Id" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+                <input asp-for="Description" id="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TimeToMaster" class="control-label"></label>
-                <input asp-for="TimeToMaster" class="form-control" />
+                <input asp-for="TimeToMaster" id="TimeToMaster" class="form-control" />
                 <span asp-validation-for="TimeToMaster" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -46,7 +46,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="InProgress" class="control-label"></label>
-               
+
                 <label> <input type="radio" name="InProgress" id="id_progress_1" value="True" style="margin-bottom: 0px">Yes</label>
                 <label class="radio-inline"> <input type="radio" name="InProgress" id="id_progress_2" value="False" style="margin-bottom: 0px">No </label>
                 <span asp-validation-for="InProgress" class="text-danger"></span>
@@ -72,16 +72,3 @@
 
 }
 
-<script>
-    const box = document.getElementByClassName("form-group");
-
-    // 👇️ Change text color on mouseover
-    box.addEventListener('mouseover', function handleMouseOver() {
-        box.style.background = 'red';
-    });
-
-    // 👇️ Change text color back on mouseout
-    box.addEventListener('mouseout', function handleMouseOut() {
-        box.style.background = 'black';
-    });
-</script>
